@@ -13,7 +13,9 @@ You can install promptsapi directly from PyPI using pip. If you have a previous 
 pip install --upgrade promptsapi
 
 # Usage
-Generating Content with generate_prompt : This function makes a POST request to generate content based on your raw input and a variety of optional parameters.
+
+# Generating Content with generate_prompt 
+This function makes a POST request to generate content based on your raw input and a variety of optional parameters.
 
 from promptsapi import generate_prompt
 
