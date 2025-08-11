@@ -12,18 +12,25 @@ You can install promptsapi directly from PyPI using pip. If you have a previous 
 
 pip install --upgrade promptsapi
 
-Usage
-# Generating Content with generate_prompt
-This function makes a POST request to generate content based on your raw input and a variety of optional parameters.
+# Usage
+Generating Content with generate_prompt : This function makes a POST request to generate content based on your raw input and a variety of optional parameters.
 
 from promptsapi import generate_prompt
+
 API_KEY = "YOUR_API_KEY_HERE"
+
 API_GENERATE_URL = "https://prompts-testing-v1-0.onrender.com/api/v1/generate"
+
 prompt_text = "write a short story about a brave knight"
+
 prompt_mode = "text"  # Can also be 'image_gen', 'video_gen' depending on API
+
 category = "fantasy"
+
 subcategory = "adventure"
+
 persona = "wise sage"
+
 response = generate_prompt(
     api_key=API_KEY,
     api_url=API_GENERATE_URL,
@@ -34,6 +41,7 @@ response = generate_prompt(
     persona=persona,
     timeout=15 # Optional: specify a custom timeout
 )
+
 if response:
     print("\n--- Generated Content ---")
     import json
@@ -45,7 +53,9 @@ else:
 This new function makes a POST request to the API's inference endpoint, allowing you to infer characteristics or summaries from provided text or code.
 
 from promptsapi import reverse_prompt
+
 API_KEY = "YOUR_API_KEY_HERE"
+
 API_REVERSE_URL = "https://prompts-testing-v1-0.onrender.com/api/v1/reverse"
 
 input_text_for_inference = "def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)" 
