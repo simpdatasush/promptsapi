@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "promptsapi"
 version = "0.1.0"
 authors = [
-  { name="Your Name", email="you@example.com" },
+  { name="simpaisush", email="info@promptsgenerator.ai" },
 ]
 description = "A client library for the prompts-testing API."
 readme = "README.md"
@@ -19,3 +19,7 @@ classifiers = [
 dependencies = [
     "requests>=2.25.1"
 ]
+
+[project.urls]
+"Homepage" = "https://github.com/your-github-username/promptsapi"
+"Bug Tracker" = "https://github.com/your-github-username/promptsapi/issues"
