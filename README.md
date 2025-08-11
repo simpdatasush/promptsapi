@@ -78,31 +78,49 @@ else:
 
 # API Reference
 generate_prompt(api_key, api_url, raw_input, language_code="en-US", prompt_mode="text", category=None, subcategory=None, persona=None, timeout=10)
+
 api_key (str): (Required) Your authentication API key for the service.
+
 api_url (str): (Required) The full URL to the content generation endpoint (e.g., https://prompts-testing-v1-0.onrender.com/api/v1/generate).
+
 raw_input (str): (Required) The primary text input or prompt for content generation.
+
 language_code (str, optional): The language code of the raw_input. Defaults to "en-US".
+
 prompt_mode (str, optional): The desired mode of content generation. Expected values typically include "text", "image_gen", or "video_gen". Defaults to "text".
+
 category (str, optional): A category to help guide the content generation (e.g., "fiction", "technical"). Defaults to None.
+
 subcategory (str, optional): A more specific subcategory within the chosen category. Defaults to None.
+
 persona (str, optional): A persona or style to influence the generated content (e.g., "humorous", "formal"). Defaults to None.
+
 timeout (int, optional): The maximum number of seconds to wait for the API response. Defaults to 10.
 
 # Returns:
 
 dict: A dictionary containing the JSON response from the API if the request is successful.
+
 None: If an error (e.g., network timeout, HTTP error) occurs during the request. Error messages are printed to the console.
+
 reverse_prompt(api_key, api_url, input_text, language_code="en-US", prompt_mode="text", timeout=10)
+
 api_key (str): (Required) Your authentication API key for the service.
+
 api_url (str): (Required) The full URL to the prompt inference endpoint (e.g., https://prompts-testing-v1-0.onrender.com/api/v1/reverse).
+
 input_text (str): (Required) The text or code input from which to infer information.
+
 language_code (str, optional): The language code of the input_text. Defaults to "en-US".
+
 prompt_mode (str, optional): The mode of the input. Defaults to "text". Currently, this is primarily relevant for "text" inference.
+
 timeout (int, optional): The maximum number of seconds to wait for the API response. Defaults to 10.
 
 # Returns:
 
 dict: A dictionary containing the JSON response from the API if the request is successful.
+
 None: If an error (e.g., network timeout, HTTP error) occurs during the request. Error messages are printed to the console.
 
 # Error Handling
