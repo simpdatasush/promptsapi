@@ -12,5 +12,3 @@ def test_reverse_prompt_exists():
     Test that the reverse_prompt function can be imported and exists.
     """
     assert callable(reverse_prompt)
-
-# You can add more comprehensive tests here.
